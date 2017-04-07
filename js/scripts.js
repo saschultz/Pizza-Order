@@ -4,7 +4,7 @@ function Pizza(size, toppings) {
   this.toppings = toppings;
   this.total = 0;
 }
-Pizza.prototype.costSize = function() {
+Pizza.prototype.calculateCost = function() {
   if (this.size === "small") {
     this.total = 8;
   } else if (this.size === "medium") {
@@ -12,20 +12,12 @@ Pizza.prototype.costSize = function() {
   } else if (this.size === "large") {
     this.total = 12;
   }
-}
-Pizza.prototype.costToppings = function() {
   for(var i=0; i<=this.toppings.length; i++) {
     if (this.toppings[i] === "daiya") {
       this.total += 1;
-    } else if (this.toppings[i] === "pepperoni") {
+    } else if (this.toppings[i] === "protein") {
       this.total += 2;
-    } else if (this.toppings[i] === "mushrooms") {
-      this.total += 1;
-    } else if (this.toppings[i] === "olives") {
-      this.total += 1;
-    } else if (this.toppings[i] === "kale") {
-      this.total += 1;
-    } else if (this.toppings[i] === "spinach") {
+    } else if (this.toppings[i] === "extra-toppings") {
       this.total += 1;
     }
   }
@@ -43,9 +35,9 @@ $(document).ready(function() {
     });
 
     var newPizza = new Pizza(inputSize, toppingsArray);
-    newPizza.costSize();
-    newPizza.costToppings();
+    newPizza.calculateCost();
+    // newPizza.costToppings();
     console.log(newPizza.toppings);
-    $("#cost").text(newPizza.total);
+    $("#cost").text("Order Total: $" + newPizza.total);
   });
 });
