@@ -36,12 +36,7 @@ $(document).ready(function() {
     });
     var newPizza = new Pizza(inputSize, toppingsArray);
     newPizza.calculateCost();
-    if (newPizza.total > 0) {
-      $("#cost").text("Thanks for your Order! Your total comes to $" + newPizza.total);
-    } else {
-      $("#cost").text("Your total comes to $" + newPizza.total + " because you didn't select any options. Please select a crust and toppings so we can build your pizza!");
-    }
 
-    // $("#cost").text("Thanks for your Order! Your total comes to $" + this.total + "because you didn't select any options.");
+    $("#cost").text("Thanks for your Order! Your total comes to $" + newPizza.total);
   });
 });
