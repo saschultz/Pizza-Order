@@ -1,0 +1,16 @@
+body {
+  font-size: 14px;
+  text-align: center;
+}
+.jumbotron {
+  text-align: center;
+  background-image: url("../img/header1.jpeg");
+  background-size: cover;
+  color: white;
+}
+.option-subheader {
+  text-decoration: underline;
+}
+.option-header {
+  font-size: 23px;
+}

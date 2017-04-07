@@ -9,47 +9,57 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Place your order:</h1>
+      <h2>Supernova Pizza</h2>
+      <hr>
+      <h1>place your order</h1>
     </div>
     <div class="container">
       <form id="pizza-order">
         <div class="form-group">
-          <label for="pizza-size">Select A Size:</label>
+          <label for="pizza-size" class="option-header">Crust</label>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="small" checked>
-              Small
+              Small 10"
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="medium">
-              Medium
+              Medium 12"
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="large">
-              Large
+              Large 18"
             </label>
           </div>
         </div>
-
-        <div class="form-group">
-          <label for="pizza-toppings">Select Toppings:</label><br>
-          <label>Cheese</label><br>
-            <input type="checkbox" name="toppings" value="mozzarella" checked>Mozzarella Cheese<br>
-            <input type="checkbox" name="toppings" value="daiya">Daiya Cheese<br><br>
-          <label>Protein</label><br>
-            <input type="checkbox" name="toppings" value="protein">Pepperoni<br>
-            <input type="checkbox" name="toppings" value="protein">Vegan Pepperoni<br><br>
-          <label>Extras</label><br>
-            <input type="checkbox" name="toppings" value="extra-toppings">Mushrooms<br>
-            <input type="checkbox" name="toppings" value="extra-toppings">Olives<br>
-            <input type="checkbox" name="toppings" value="extra-toppings">Kale<br>
-            <input type="checkbox" name="toppings" value="extra-toppings">Spinach<br>
+        <hr>
+        <div class="row">
+          <div class="form-group">
+            <label for="pizza-toppings" class="option-header">The Goods</label><br>
+            <div class="col-md-4">
+            <label class="option-subheader">Cheese</label><br>
+              <input type="checkbox" name="toppings" value="mozzarella" checked>Mozzarella Cheese<br>
+              <input type="checkbox" name="toppings" value="daiya">Daiya Cheese<br><br>
+            </div>
+            <div class="col-md-4">
+            <label class="option-subheader">Protein</label><br>
+              <input type="checkbox" name="toppings" value="protein">Pepperoni<br>
+              <input type="checkbox" name="toppings" value="protein">Vegan Pepperoni<br><br>
+            </div>
+            <div class="col-md-4">
+            <label class="option-subheader">Extras</label><br>
+              <input type="checkbox" name="toppings" value="extra-toppings">Mushrooms<br>
+              <input type="checkbox" name="toppings" value="extra-toppings">Olives<br>
+              <input type="checkbox" name="toppings" value="extra-toppings">Kale<br>
+              <input type="checkbox" name="toppings" value="extra-toppings">Spinach<br>
+            </div>
+          </div>
         </div>
-
+        <hr>
         <button type="submit" class="btn btn-info">Place Order</button>
       </form>
       <div id="cost">
