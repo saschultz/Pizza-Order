@@ -78,23 +78,15 @@
         </div>
         <hr>
         <div class="row">
+          <label for="procurement" class="option-header">Procurement</label>
+          <p>Let us know who the order is for and preferred procurement method.</p>
           <div class="form-group">
-            <label for="procurement" class="option-header">Procurement</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="procurement" value="pick-up" required>
-                In Store Pick-Up
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="procurement" value="delivery" required>
-                Home Delivery
-              </label>
-            </div>
+            <label for="name">Enter a name for the order:</label>
+            <input id="name" class="form-control" type="text">
           </div>
         </div>
-        <button type="submit" class="btn btn-info">Place Order</button>
+        <button type="submit" class="btn btn-info" id="pick-up">Order For Pick-Up</button>
+        <button type="submit" class="btn btn-info" id="delivery">Order For Delivery</button>
       </form>
       <div id="cost">
         <p></p>

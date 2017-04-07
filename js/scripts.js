@@ -1,5 +1,6 @@
 //Back-End Logic:
-function Pizza(size, toppings) {
+function Pizza(name, size, toppings) {
+  this.name = name;
   this.size = size;
   this.toppings = toppings;
   this.total = 0;
@@ -34,9 +35,11 @@ $(document).ready(function() {
       var inputToppings = $(this).val();
       toppingsArray.push(inputToppings);
     });
-    var newPizza = new Pizza(inputSize, toppingsArray);
+    var inputName = $("input#name").val();
+    console.log(inputName);
+    var newPizza = new Pizza(inputName, inputSize, toppingsArray);
     newPizza.calculateCost();
 
-    $("#cost").text("Thanks for your Order! Your total comes to $" + newPizza.total);
+    $("#cost").text("Thanks for your order, " + newPizza.name + "! " + "Your total comes to $" + newPizza.total);
   });
 });

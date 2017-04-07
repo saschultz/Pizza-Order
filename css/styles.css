@@ -16,4 +16,10 @@ body {
 }
 #cost {
   margin-top: 2.5%;
+  font-weight: bold;
+  font-size: 18px;
+}
+ #name {
+  width: 186px;
+  margin: 0 auto;
 }
