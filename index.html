@@ -78,16 +78,23 @@
         </div>
         <hr>
         <div class="row">
-          <label for="procurement" class="option-header">Procurement</label>
-          <p>Let us know who the order is for and preferred procurement method.</p>
+          <label for="procurement" class="option-header">Pizza Procurement</label>
+          <p>Let us know who the order is for and add your address if you would like your pizza delivered. If not, we will see you in store for pick-up!</p>
           <div class="form-group">
             <label for="name">Enter a name for the order:</label>
-            <input id="name" class="form-control" type="text">
+            <input id="name" class="form-control" type="text" required>
+          </div>
+          <div id="delivery-form">
+            <p>Enter your address for delivery</p>
           </div>
         </div>
-        <button type="submit" class="btn btn-info" id="pick-up">Order For Pick-Up</button>
-        <button type="submit" class="btn btn-info" id="delivery">Order For Delivery</button>
+        <span class="btn btn-info" id="delivery">Add Address For Delivery</span>
+        <p>or</p>
+        <button type="submit" class="btn btn-info" id="pick-up">Place Order</button>
       </form>
+
+      <ul id="delivery-return"></ul>
+
       <div id="cost">
         <p></p>
       </div>
