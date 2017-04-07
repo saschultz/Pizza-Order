@@ -17,6 +17,7 @@
       <form id="pizza-order">
         <div class="form-group">
           <label for="pizza-size" class="option-header">Crust</label>
+          <p>Small pizzas starting at $8, Medium at $10, and Large at $12</p>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="small" checked>
@@ -40,22 +41,33 @@
         <div class="row">
           <div class="form-group">
             <label for="pizza-toppings" class="option-header">The Goods</label><br>
+            <br>
             <div class="col-md-4">
             <label class="option-subheader">Cheese</label><br>
               <input type="checkbox" name="toppings" value="mozzarella" checked>Mozzarella Cheese<br>
-              <input type="checkbox" name="toppings" value="daiya">Daiya Cheese<br><br>
+              <input type="checkbox" name="toppings" value="daiya">Daiya Cheese <em>$1 extra</em><br><br>
             </div>
             <div class="col-md-4">
-            <label class="option-subheader">Protein</label><br>
+            <label class="option-subheader">Add Protein ($2)</label><br>
               <input type="checkbox" name="toppings" value="protein">Pepperoni<br>
               <input type="checkbox" name="toppings" value="protein">Vegan Pepperoni<br><br>
             </div>
             <div class="col-md-4">
-            <label class="option-subheader">Extras</label><br>
-              <input type="checkbox" name="toppings" value="extra-toppings">Mushrooms<br>
-              <input type="checkbox" name="toppings" value="extra-toppings">Olives<br>
-              <input type="checkbox" name="toppings" value="extra-toppings">Kale<br>
-              <input type="checkbox" name="toppings" value="extra-toppings">Spinach<br>
+            <label class="option-subheader">Extras ($1 each)</label><br>
+              <div class="col-md-4">
+                <input type="checkbox" name="toppings" value="extra-toppings">Mushrooms<br>
+                <input type="checkbox" name="toppings" value="extra-toppings">Olives<br>
+                <input type="checkbox" name="toppings" value="extra-toppings">Kale<br>
+              </div>
+              <div class="col-md-4">
+                <input type="checkbox" name="toppings" value="extra-toppings">Spinach<br>
+                <input type="checkbox" name="toppings" value="extra-toppings">Artichoke Hearts<br>
+                <input type="checkbox" name="toppings" value="extra-toppings">Basil<br>
+              </div>
+              <div class="col-md-4">
+                <input type="checkbox" name="toppings" value="extra-toppings">Roasted Red Peppers<br>
+                <input type="checkbox" name="toppings" value="extra-toppings">Carmalized Garlic<br>
+              </div>
             </div>
           </div>
         </div>
