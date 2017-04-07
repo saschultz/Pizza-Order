@@ -8,11 +8,18 @@ body {
   font-size: 14px;
   text-align: center;
 }
+.well {
+  background-color: #CABEE7;
+}
 .option-subheader {
   text-decoration: underline;
 }
 .option-header {
   font-size: 23px;
+}
+.btn:hover {
+  background-color: #5F5287;
+  color: white;
 }
 #cost {
   margin-top: 2.5%;
