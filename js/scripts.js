@@ -15,6 +15,8 @@ Pizza.prototype.calculateCost = function() {
   for(var i=0; i<=this.toppings.length; i++) {
     if (this.toppings[i] === "daiya") {
       this.total += 1;
+    } else if (this.toppings[i] === "sauce") {
+      this.total += 2;
     } else if (this.toppings[i] === "protein") {
       this.total += 2;
     } else if (this.toppings[i] === "extra-toppings") {
