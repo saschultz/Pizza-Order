@@ -30,16 +30,18 @@ $(document).ready(function() {
     e.preventDefault();
     var toppingsArray = [];
     var inputSize = $("input:radio[name=size]:checked").val();
-
     $("input:checkbox[name=toppings]:checked").each(function(){
       var inputToppings = $(this).val();
       toppingsArray.push(inputToppings);
     });
-
     var newPizza = new Pizza(inputSize, toppingsArray);
     newPizza.calculateCost();
-    // newPizza.costToppings();
-    console.log(newPizza.toppings);
-    $("#cost").text("Order Total: $" + newPizza.total);
+    if (newPizza.total > 0) {
+      $("#cost").text("Thanks for your Order! Your total comes to $" + newPizza.total);
+    } else {
+      $("#cost").text("Your total comes to $" + newPizza.total + " because you didn't select any options. Please select a crust and toppings so we can build your pizza!");
+    }
+
+    // $("#cost").text("Thanks for your Order! Your total comes to $" + this.total + "because you didn't select any options.");
   });
 });

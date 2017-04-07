@@ -1,16 +1,19 @@
-body {
-  font-size: 14px;
-  text-align: center;
-}
 .jumbotron {
   text-align: center;
   background-image: url("../img/header1.jpeg");
   background-size: cover;
   color: white;
 }
+body {
+  font-size: 14px;
+  text-align: center;
+}
 .option-subheader {
   text-decoration: underline;
 }
 .option-header {
   font-size: 23px;
+}
+#cost {
+  margin-top: 2.5%;
 }
