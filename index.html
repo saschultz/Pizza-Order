@@ -16,7 +16,7 @@
     <div class="container">
       <form id="pizza-order">
         <div class="form-group">
-          <label for="pizza-size" class="option-header">Crust</label>
+          <label for="pizza-size" class="option-header">The Crust</label>
           <p>Small pizzas starting at $8, Medium at $10, and Large at $12</p>
           <div class="radio">
             <label>
@@ -77,6 +77,23 @@
           </div>
         </div>
         <hr>
+        <div class="row">
+          <div class="form-group">
+            <label for="procurement" class="option-header">Procurement</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="procurement" value="pick-up" required>
+                In Store Pick-Up
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="procurement" value="delivery" required>
+                Home Delivery
+              </label>
+            </div>
+          </div>
+        </div>
         <button type="submit" class="btn btn-info">Place Order</button>
       </form>
       <div id="cost">
