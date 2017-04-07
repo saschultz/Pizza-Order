@@ -80,10 +80,11 @@ $(document).ready(function() {
       var inputStreet = $(this).find("input.new-street").val();
       var inputCity = $(this).find("input.new-city").val();
       var inputState = $(this).find("input.new-state").val();
-      var newAddress = new Address(inputStreet, inputCity, inputState)
+      var newAddress = new Address(inputStreet, inputCity, inputState);
       newAddress.fullAddress();
-      newPizza.address.push(newAddress)
-      $("#delivery-return").append("Delivery address: " + newAddress.fullAddress())
+      newPizza.address.push(newAddress);
+      $("#delivery-return").empty();
+      $("#delivery-return").append("Delivery address: " + newAddress.fullAddress());
     });
 
     $("#cost").text("Thanks, " + newPizza.name + "! " + "Your order has been received. " + "Your total will be $" + newPizza.total);

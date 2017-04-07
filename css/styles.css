@@ -23,9 +23,11 @@ body {
   width: 186px;
   margin: 0 auto;
 }
-
 #delivery-form {
   display: none;
   width: 230px;
   margin: 0 auto;
+}
+#delivery-return {
+  font-size: 18px;
 }
